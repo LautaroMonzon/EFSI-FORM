@@ -1,0 +1,34 @@
+<html>
+
+    <head>
+    </head>
+    <body>
+        <div>
+            <form method="get" id="formulario">
+                <label for="Lengua" class="form-label">Lengua</label><br>
+                <input type="text" name="Lengua" id="Lengua" class="form-control" onkeyup="validar()" required/>
+                <div class="form-text">
+                    La nota será valida solo si se encuentra entre 1 y 10
+                </div><br>
+
+                <label for="Matematica" class="form-label">Matematica</label><br>
+                <input type="text" name="Matematica" id="Matematica" class="form-control" onkeyup="validar()" required/>
+                <div class="form-text">
+                    La nota será valida solo si se encuentra entre 1 y 10
+                </div><br>
+
+                <label for="EFSI" class="form-label">EFSI</label><br>
+                <input type="text" name="EFSI" id="EFSI" class="form-control" onkeyup="validar()" required/>
+                <div class="form-text">
+                    La nota será valida solo si se encuentra entre 1 y 10
+                </div>
+            </form>    
+        </div>    
+
+        <button type="button" value="Promedio" id="Promedio" onclick="Promedio()">Promedio</button><br>
+        <button type="button" value="Mayor" id="MayorNota" onclick="MayorNota()">Mayor</button><br>
+
+        <script src="index.js"></script>
+    </body>
+</html> 
+<script src="Controller.js"></script>
